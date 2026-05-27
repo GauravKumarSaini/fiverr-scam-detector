@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+
+  "name": "Fiverr Scam Detector",
+
+  "version": "1.0",
+
+  "description": "Detect suspicious Fiverr messages",
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.fiverr.com/*"
+      ],
+
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
